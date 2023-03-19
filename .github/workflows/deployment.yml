@@ -2,14 +2,14 @@ name: Node.js CI
 
 on:
   push:
-    paths:
-        - 'backend/**'
-        - '!backend/node_modules/**'
+    # paths:
+    #     - 'backend/**'
+    #     - '!backend/node_modules/**'
     branches: [ main ]
   pull_request:
-    paths:
-      - 'backend/**'
-      - '!backend/node_modules/**'
+    # paths:
+    #   - 'backend/**'
+    #   - '!backend/node_modules/**'
 
     branches: [ main ]
 
