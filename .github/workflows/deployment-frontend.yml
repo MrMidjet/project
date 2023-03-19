@@ -1,8 +1,10 @@
 name: Angular CI
+
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   ci:
@@ -44,8 +46,6 @@ jobs:
       - name: Lint
         run: |
           npm run lint
-        working-directory: ./frontend
       - name: Test
         run: |
           npm run test -- --prod
-        working-directory: ./frontend
